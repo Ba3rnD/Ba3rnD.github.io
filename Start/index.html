@@ -1,0 +1,294 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Ranch-Linedancer-Plauen</title>
+<meta name="description" content="Ranch Linedancer Plauen, News,Tanzbeschreibungen, G&auml;stebuch,Termine,Foto's, Berichte,Vorstellung unseres Vereins">
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+<link rel="stylesheet" href="Skript/scrollbars.css" type="text/css">
+<script type="text/javascript">
+ <!--
+
+ function Fensterln(goURL,width,height,scrox,statx,resix,toolx,bewege,fokus)
+  {
+   var scrox = ""; var resix = ""; var toolx = ""; var statx = "";
+   if (scrox == 1) {scrox = "yes"}; else {scrox = "no"}
+   if (resix == 1) {resix = "yes"}; else {resix = "no"}
+   if (toolx == 1) {toolx = "yes"}; else {toolx = "no"}
+   if (statx == 1) {statx = "yes"}; else {statx = "no"}
+
+   var i = Math.round(Math.random()*999)
+
+   // Die folgende Zeile wurde Umgebrochen, Schreiben Sie die Zeile zusammen!
+   fenster=window.open(goURL,'fenster'+i,'scrollbars='+scrox+',status='+statx+',menubar=no,resizable='+
+     resix+',location=no,toolbar='+toolx+',width='+width+',height='+height);
+
+   // Bewege Fenster in die Mitte des Bildschirms oder nach rechts oben
+   if(bewege == 1) {fenster.moveTo(((screen.availWidth-width)/2),((screen.availHeight-height-85)/2))}
+   if(bewege == 2) {fenster.moveTo((screen.availWidth-width)-2,0)}
+
+   // Focus aktivieren
+   if(fokus == 1) {Fokus()}
+ }
+
+ function Fokus()
+  {
+   if (fenster.closed == true){return}
+   setTimeout("Fokus()", 350); fenster.focus()
+   }
+
+ //-->
+</script>
+<script type="text/javascript">
+<!--
+var maxnr=10;
+var aktnr=0;
+var halt=1;
+var an=1;
+
+function bild(nr)
+{
+if (an) {
+aktnr+=nr;
+if (aktnr<1)
+aktnr=maxnr;
+else if (aktnr>maxnr)
+aktnr=1;
+document.slide.src="Start/image"+aktnr+".jpg";
+}
+}
+
+function show()
+{
+if (!halt) {
+bild(1);
+setTimeout("show()",5000);
+}
+}
+
+function power()
+{
+if (!an) {
+document.schalter.src="Start/on.gif";
+document.slide.src="Start/start.jpg";
+aktnr=0;
+halt=1;
+an=1;
+}
+else {
+document.slide.src="Start/start2.jpg";
+document.schalter.src="Start/off.gif";
+an=0;
+}
+}
+// -->
+
+</script>
+<script type="text/javascript">
+ <!--
+  function Uhrzeit()
+   {
+    var
+    Heute   = new Date();
+    Stunde  = Heute.getHours();
+    Minute  = Heute.getMinutes();
+    Sekunde = Heute.getSeconds();
+            if (Stunde<10)
+             {
+               Stunde="0"+String(Stunde);
+             }
+           if (Minute<10)
+             {
+               Minute="0"+String(Minute);
+             }
+           if (Sekunde<10)
+             {
+               Sekunde="0"+String(Sekunde);
+             }
+    document.zeit.uhr.value= Stunde + ":" + Minute + ":" + Sekunde;
+    window.setTimeout('Uhrzeit()',1000);
+   }
+ // -->
+</script>
+
+<script type="text/javascript">
+ <!--
+  function Datum()
+   {
+    Heute = new Date();
+    Tag   = Heute.getDate();
+    Monat = Heute.getMonth()+1;
+    Jahr  = Heute.getYear();
+             if (Tag<10)
+             {
+               Tag="0"+String(Tag);
+             }
+           if (Monat<10)
+             {
+               Monat="0"+String(Monat);
+             }
+    document.date.datum.value= Tag + "." + Monat + "." + Jahr;
+   }
+ // -->
+
+</script>
+
+
+<script type="text/javascript">
+  <!--
+    Jetzt = new Date();
+   var Start = Jetzt.getTime();
+
+   function ZeitAnzeigen()
+   {
+    var absSekunden = Math.round(ZeitBerechnen());
+    var relSekunden = absSekunden % 60;
+    var absMinuten = Math.round((absSekunden-30)/60);
+    var anzSekunden ="" + ((relSekunden > 9) ? relSekunden : "0" + relSekunden);
+    var anzMinuten ="" + ((absMinuten > 9) ? absMinuten : "0" + absMinuten);
+    window.document.Anzeige.Zeit.value = anzMinuten + ":" + anzSekunden;
+    window.setTimeout('ZeitAnzeigen()',1000);
+   }
+
+   function ZeitBerechnen()
+   {
+    var Immernoch = new Date();
+    return((Immernoch.getTime() - Start)/1000);
+   }
+  function News()
+{
+ var link ="news.html" ;
+ window.open(link,"fensterln","directories=0,location=0,menubar=0,resizeable=1,scrollbars=2,status=1,toolbar=0,width=660,height=730");
+}
+  //-->
+ </script>
+
+<script language="JavaScript" src="Skript/banner.js" type="text/javascript"></script>
+
+
+</head>
+<body  onload="showBanner();window.setTimeout('Uhrzeit()',1000);Datum();">
+
+<div class=Section1>
+
+<div align="center">
+<marquee height="22" loop="3"><font size="+1">Der Vogtland Cowboy - Termine , Berichte und mehr </font></marquee>
+<h1><font color="#A02020" face="Algerian">Herzlich willkommen auf den Webseiten<br>
+des Vogtland Cowboy&acute;s <br> und<br>der Ranch Linedancer</font></h1></div><br>
+
+<div align="center"><img src="Graphic/kopf linedancer.jpg" width="900" height="123" border="0" alt="">
+<br>
+
+<br>
+<table width="900">
+<tr>
+
+ <td><div align="center"><img src="Graphic/MaikelBernd.jpg" width="480" height="343" border="0" alt=""></div> </td>
+ <td><div align="center"><font size="+1"><i>Viel Spa&szlig; beim durchst&ouml;bern unserer Seiten w&uuml;nschen Euch<br>    Bernd und Maikel !<br>
+Ihr findet hier Termine , Berichte , Tanzbeschreibungen , Fotos und vieles mehr !<br>
+Ihr k&ouml;nnt Euere Termine auch selbst in unseren Kalender eintragen !<br>
+&Uuml;ber einen Eintrag in unserem G&auml;stebuch w&uuml;rden wir uns freuen !<br>
+Wenn Ihr alle Seiten des "Vogtland Cowboy's" sehen wollt, klickt bitte am Ende dieser Seite auf <u>weiter</u> !</i></font></div> <br>
+
+ </td>
+</tr>
+</table>
+<table  width="900">
+<tr>
+ <td align="center">
+
+         <table   align="center" border="2" cellpadding="10" cellspacing="10">
+         <tr><td width="600" align="center" ><font face="Algerian"><font size="+3">
+        </font> <br>
+   <br> </font><font size="+3"> Auftritt zur Nacht der Museen 2013<br>im Garten der Weberh&auml;user </font></font></font></font></div></td><td></td></tr>
+         <tr>
+
+         <td align="center"  border="0" colspan"2" height="450"><img src="Start/start.jpg" width="480" height="360" border="0" alt="" name="slide"></td>
+
+         <td><form name="aktuell">letzte Aktualisierung:<br><input type=text value='04.07.2013' size=10> </form>
+         <br> <form name="date">aktuelles Datum :<br>
+         <input type=text name="datum" size=10></form><br><form name="zeit" >Uhrzeit:<br>
+          <input type=text name="uhr" size=10></form>
+         </td></tr>
+         <tr>
+                  <td align="center" ><form >
+                 <input type=button value=" |&lt; " onclick="aktnr=1;bild(0);" >
+                 <input type=button value=" &lt; " onclick="bild(-1)" >
+                 <input type=button value="Play" onclick="halt=0;show()" >
+                 <input type=button value="Stop" onclick="halt=1">
+                 <input type=button value="  &gt; " onclick="bild(1)">
+                 <input type=button value=" &gt;| " onclick="aktnr=maxnr;bild(0);" ><br>
+                 <input type=button value=" Aktueller Bericht : Linedance Workshop(klick mich)" onclick="News()"></form>
+
+Neues auf unseren Seiten:<br><b><font size="+1">T&auml;nze vom Workshop November 2018 stehen im Archiv !<br>
+<font color="#FF0000">Neue Tanzbeschreibungen sind hochgeladen !!!</font><br>
+  </font></b>
+
+                 </td>
+                  <td >Power <a href="javascript:power()">
+                  <img src="Start/on.gif" name="schalter" border=0 align="center" alt="Power on/off" title="Power" width="40" height="40" ></a></td>
+         </tr>
+         </table>
+         </td>
+         </tr>
+</table>
+
+<table width="900" >
+<tr>
+         <td valign="middle" align="center" >
+         <table width="800" height="400" >
+         <tr><td width="380" valign="middle"><iframe src="workshop.html"  width="260" height="300" scrolling="no" align="center" frameborder="0" marginwidth="0" ></iframe></td>
+         <td> </td>
+         <td background="Start/diedrei.jpg" width="400" bgproperties="fixed"  style="background-repeat:no-repeat;background-position:center" border="0"> </td>
+         </tr>
+         <tr>
+         <td> </td>
+         <td> </td>
+         <td valign="top">Unsere 3 Tanzlehrer Enrico , Kerstin , Holger </td>
+         </tr>
+         <tr>
+                 <td> </td>
+                 <td> </td>
+                 <td> </td>
+         </tr>
+         </table>
+</td></tr></table> </div>
+<br>
+<font color="#C04040"><div align="center"><font size="+2">
+<u>Jeden Dienstag</u> ab 18.00 Uhr Linedance f&uuml;r <u>Anf&auml;nger</u> mit Peter <br><b>Krankheitsbedingt bis auf weiteres Anf&auml;ngerkurs Dienstags ab 19:00</b><br> ab
+19.30 Uhr Linedance-Abend mit den "Ranch Linedancern"<br>und DJ Bernd , dem "alten" Vogtland Cowboy<br>
+Wo ??<br>
+ In der Gastst&auml;tte "The Ranch" , Eugen Fritsch Str.7  in 08523 Plauen / Vogtland   <br>
+Infos unter : Tel. 03741 / 136194<br>Jeder ist herzlich willkommen !!!!
+</font></div>
+</font>
+<br>
+
+<br>
+<div align="center"><b><font size="+2">Wenn Ihr jetzt alle Seiten sehen wollt, dr&uuml;ckt bitte auf weiter !</font></b> </div>
+
+<div align="center">
+
+<br>
+
+<table align="center" border="0" cellpadding="0" cellspacing="0">
+ <tr>
+ <td width="400" >&nbsp;</td>
+ <td width="200" ><div align="center"><a href="Seiten/Startseite.html"><img src="Graphic/zaunweiter.jpg" width="213" height="44" border="0" alt=""></a><h4>Ihr seit der</h4>&nbsp;&nbsp;&nbsp; <a href="http://www.webhosting.de" target="_top"><img src="http://www.bluenetdesign.de/cgi-bin/counter.pl?member=1047567273" border=0 alt="Webhosting, Webspace & Domains "></a>
+
+&nbsp;&nbsp;&nbsp;<h4>Besucher auf unserer Seite</h4></div></td>
+  <td width="400" ><iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2FTheRanchLinedanceGroupPlauen&width=292&height=290&show_faces=true&colorscheme=light&stream=false&show_border=false&header=true"id="iframe2"width="300"height="180"
+ scroll="no" frameborder=0 align="right" ></iframe></td>
+ </tr>
+</table>
+
+
+
+
+
+<br><br>
+</div>
+</body>
+</html>

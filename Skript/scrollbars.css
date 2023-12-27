@@ -1,0 +1,104 @@
+/* Scrollbar properties are only supported by Internet Explorer 5.5  */
+body {  background:peachpuff;
+        scrollbar-3dlight-color :#CC9966;
+        scrollbar-arrow-color : #FFFFFF;
+        scrollbar-base-color : #EFEFEF;
+        scrollbar-darkshadow-color : #996666;
+        scrollbar-face-color : #FFCC99;
+        scrollbar-highlight-color : #000000;
+        scrollbar-shadow-color : #FF9966;
+        scrollbar-track-color : #FFCC99;
+}
+table {
+text-align: center;
+
+
+          background-color:peachpuff;
+          border-color:black;
+          border-right-color:#FF9900;
+          border-bottom-color:#FF9966;
+          border-top-color:LightGoldenrodYellow;
+          border-left-color:LightGoldenrodYellow;
+          border-darkshadow-color :#000000;
+          Border-highlight-color : #FFFFFF;
+
+ }
+ .ig{color:black;background-color: moccasin;}
+ .ik{color:black;background-color:peachpuff;}
+ input{color:white;background-color:maroon;}
+
+a:link {
+ font-family: Times New Roman;
+ color: #800000;
+ TEXT-DECORATION:none;
+}
+a:visited {
+ font-family: Comic Sans MS;
+ font-style: italic;
+ color: #5F0000;
+}
+a:hover {
+        COLOR: #AFAFAF; TEXT-DECORATION: underline overline;
+}
+a:active {
+        COLOR: #AFAFAF; TEXT-DECORATION: underline overline;
+        }
+A.reiter {
+        display: block;
+        font-family: Comic Sans MS;
+        font-size: 15px;
+        color: #5F0000;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+}
+
+A.reiter2 {
+        display: block;
+        font-family: Comic Sans MS;
+        font-size: 15px;
+        color: Maroon;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        background-color: Moccasin
+}
+A.reiter3 {
+        display: block;
+        font-family: Comic Sans MS;
+        font-size: 15px;
+        color: #ffffff;
+        font-weight: bold;
+        text-align: right;
+        text-decoration: none;
+        background-color: Maroon
+}
+A.reiter:hover {
+        color: #AFAFAF;
+}
+
+table.tabellenfarbe {
+        background-color: Moccasin;
+}
+
+td.spaltenfarbe {
+        background-color: Maroon;
+        color: #000099;
+        padding-left:15px;
+        font-size: 11px;
+        font-family: Verdana;
+        height: 15px;
+}
+.pdf {
+        font-weight: bold;
+        color: Maroon;
+        font-size: smaller;
+}
+.tab1 {
+       background-color: Moccasin;
+       border-color : Maroon;
+       text-align: center;
+}
+.tab2 {
+          border-darkshadow-color :#000000;
+          Border-highlight-color : #000000;

@@ -1,0 +1,12 @@
+/* Scrollbar properties are only supported by Internet Explorer 5.5  */
+body {  background: url("../Bilder/Button/hg1.jpg");
+        scrollbar-3dlight-color :#CC9966;
+        scrollbar-arrow-color : #FFFFFF;
+        scrollbar-base-color : #EFEFEF;
+        scrollbar-darkshadow-color : #996666;
+        scrollbar-face-color : #FFCC99;
+        scrollbar-highlight-color : #000000;
+        scrollbar-shadow-color : #FF9966;
+        scrollbar-track-color : #FFCC99;
+
+}
